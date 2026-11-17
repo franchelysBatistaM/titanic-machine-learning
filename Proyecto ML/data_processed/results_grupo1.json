@@ -1,0 +1,198 @@
+{
+    "Modelo 1 (MLP Base)": {
+        "Hiperparametros": {
+            "regularizacion": "ninguna",
+            "l1": 0,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 26,
+        "Validacion": {
+            "Accuracy": 0.835820895522388,
+            "Precision": 0.75,
+            "Recall": 0.8653846153846154,
+            "F1-Score": 0.8035714285714286,
+            "AUC-ROC": 0.914751407129456,
+            "Loss": 0.3696163296699524,
+            "Matriz de confusion": [
+                [
+                    67,
+                    15
+                ],
+                [
+                    7,
+                    45
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8134328358208955,
+            "Precision": 0.7708333333333334,
+            "Recall": 0.7254901960784313,
+            "F1-Score": 0.7474747474747475,
+            "AUC-ROC": 0.8327427356484762,
+            "Loss": 0.4790979027748108,
+            "Matriz de confusion": [
+                [
+                    72,
+                    11
+                ],
+                [
+                    14,
+                    37
+                ]
+            ]
+        }
+    },
+    "Modelo 2 (L2 Ridge)": {
+        "Hiperparametros": {
+            "regularizacion": "l2",
+            "l1": 0,
+            "l2": 0.01,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 70,
+        "Validacion": {
+            "Accuracy": 0.835820895522388,
+            "Precision": 0.75,
+            "Recall": 0.8653846153846154,
+            "F1-Score": 0.8035714285714286,
+            "AUC-ROC": 0.914516885553471,
+            "Loss": 0.3691832423210144,
+            "Matriz de confusion": [
+                [
+                    67,
+                    15
+                ],
+                [
+                    7,
+                    45
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7910447761194029,
+            "Precision": 0.7555555555555555,
+            "Recall": 0.6666666666666666,
+            "F1-Score": 0.7083333333333334,
+            "AUC-ROC": 0.8379399952752185,
+            "Loss": 0.47236162424087524,
+            "Matriz de confusion": [
+                [
+                    72,
+                    11
+                ],
+                [
+                    17,
+                    34
+                ]
+            ]
+        }
+    },
+    "Modelo 3 (L1 Lasso)": {
+        "Hiperparametros": {
+            "regularizacion": "l1",
+            "l1": 0.005,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.8432835820895522,
+            "Precision": 0.7719298245614035,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.8073394495412844,
+            "AUC-ROC": 0.9201454033771108,
+            "Loss": 0.3754989206790924,
+            "Matriz de confusion": [
+                [
+                    69,
+                    13
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8059701492537313,
+            "Precision": 0.7777777777777778,
+            "Recall": 0.6862745098039216,
+            "F1-Score": 0.7291666666666666,
+            "AUC-ROC": 0.840066146940704,
+            "Loss": 0.4735070466995239,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    16,
+                    35
+                ]
+            ]
+        }
+    },
+    "Modelo 4 (ElasticNet)": {
+        "Hiperparametros": {
+            "regularizacion": "l1_l2",
+            "l1": 0.002,
+            "l2": 0.005,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.8507462686567164,
+            "Precision": 0.7857142857142857,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.8148148148148148,
+            "AUC-ROC": 0.912640712945591,
+            "Loss": 0.36841127276420593,
+            "Matriz de confusion": [
+                [
+                    70,
+                    12
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7910447761194029,
+            "Precision": 0.7674418604651163,
+            "Recall": 0.6470588235294118,
+            "F1-Score": 0.7021276595744681,
+            "AUC-ROC": 0.838648712497047,
+            "Loss": 0.4744289815425873,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    18,
+                    33
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,590 @@
+{
+    "m1_mlp_base": {
+        "Hiperparametros": {
+            "regularizacion": "ninguna",
+            "l1": 0,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 26,
+        "Validacion": {
+            "Accuracy": 0.835820895522388,
+            "Precision": 0.75,
+            "Recall": 0.8653846153846154,
+            "F1-Score": 0.8035714285714286,
+            "AUC-ROC": 0.914751407129456,
+            "Loss": 0.3696163296699524,
+            "Matriz de confusion": [
+                [
+                    67,
+                    15
+                ],
+                [
+                    7,
+                    45
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8134328358208955,
+            "Precision": 0.7708333333333334,
+            "Recall": 0.7254901960784313,
+            "F1-Score": 0.7474747474747475,
+            "AUC-ROC": 0.8327427356484762,
+            "Loss": 0.4790979027748108,
+            "Matriz de confusion": [
+                [
+                    72,
+                    11
+                ],
+                [
+                    14,
+                    37
+                ]
+            ]
+        }
+    },
+    "m1_mlp_base_exp1": {
+        "Hiperparametros": {
+            "regularizacion": "ninguna",
+            "l1": 0,
+            "l2": 0,
+            "learning_rate": 0.01,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 24,
+        "Validacion": {
+            "Accuracy": 0.8507462686567164,
+            "Precision": 0.8076923076923077,
+            "Recall": 0.8076923076923077,
+            "F1-Score": 0.8076923076923077,
+            "AUC-ROC": 0.9166275797373359,
+            "Loss": 0.37253084778785706,
+            "Matriz de confusion": [
+                [
+                    72,
+                    10
+                ],
+                [
+                    10,
+                    42
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7761194029850746,
+            "Precision": 0.7560975609756098,
+            "Recall": 0.6078431372549019,
+            "F1-Score": 0.6739130434782609,
+            "AUC-ROC": 0.82636428065202,
+            "Loss": 0.5263832807540894,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    20,
+                    31
+                ]
+            ]
+        }
+    },
+    "m1_mlp_base_exp2": {
+        "Hiperparametros": {
+            "regularizacion": "ninguna",
+            "l1": 0,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 64,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 27,
+        "Validacion": {
+            "Accuracy": 0.835820895522388,
+            "Precision": 0.7678571428571429,
+            "Recall": 0.8269230769230769,
+            "F1-Score": 0.7962962962962963,
+            "AUC-ROC": 0.9140478424015008,
+            "Loss": 0.36905011534690857,
+            "Matriz de confusion": [
+                [
+                    69,
+                    13
+                ],
+                [
+                    9,
+                    43
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7985074626865671,
+            "Precision": 0.7608695652173914,
+            "Recall": 0.6862745098039216,
+            "F1-Score": 0.7216494845360825,
+            "AUC-ROC": 0.8336876919442476,
+            "Loss": 0.47201207280158997,
+            "Matriz de confusion": [
+                [
+                    72,
+                    11
+                ],
+                [
+                    16,
+                    35
+                ]
+            ]
+        }
+    },
+    "m2_l2_ridge": {
+        "Hiperparametros": {
+            "regularizacion": "l2",
+            "l1": 0,
+            "l2": 0.01,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 70,
+        "Validacion": {
+            "Accuracy": 0.835820895522388,
+            "Precision": 0.75,
+            "Recall": 0.8653846153846154,
+            "F1-Score": 0.8035714285714286,
+            "AUC-ROC": 0.914516885553471,
+            "Loss": 0.3691832423210144,
+            "Matriz de confusion": [
+                [
+                    67,
+                    15
+                ],
+                [
+                    7,
+                    45
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7910447761194029,
+            "Precision": 0.7555555555555555,
+            "Recall": 0.6666666666666666,
+            "F1-Score": 0.7083333333333334,
+            "AUC-ROC": 0.8379399952752185,
+            "Loss": 0.47236162424087524,
+            "Matriz de confusion": [
+                [
+                    72,
+                    11
+                ],
+                [
+                    17,
+                    34
+                ]
+            ]
+        }
+    },
+    "m2_l2_ridge_exp1": {
+        "Hiperparametros": {
+            "regularizacion": "l2",
+            "l1": 0,
+            "l2": 0.001,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 32,
+        "Validacion": {
+            "Accuracy": 0.8134328358208955,
+            "Precision": 0.7288135593220338,
+            "Recall": 0.8269230769230769,
+            "F1-Score": 0.7747747747747747,
+            "AUC-ROC": 0.914751407129456,
+            "Loss": 0.3704986572265625,
+            "Matriz de confusion": [
+                [
+                    66,
+                    16
+                ],
+                [
+                    9,
+                    43
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8134328358208955,
+            "Precision": 0.782608695652174,
+            "Recall": 0.7058823529411765,
+            "F1-Score": 0.7422680412371134,
+            "AUC-ROC": 0.835813843609733,
+            "Loss": 0.4835394024848938,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    15,
+                    36
+                ]
+            ]
+        }
+    },
+    "m2_l2_ridge_exp2": {
+        "Hiperparametros": {
+            "regularizacion": "l2",
+            "l1": 0,
+            "l2": 0.1,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.8507462686567164,
+            "Precision": 0.7962962962962963,
+            "Recall": 0.8269230769230769,
+            "F1-Score": 0.8113207547169812,
+            "AUC-ROC": 0.913344277673546,
+            "Loss": 0.3947613835334778,
+            "Matriz de confusion": [
+                [
+                    71,
+                    11
+                ],
+                [
+                    9,
+                    43
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7985074626865671,
+            "Precision": 0.7727272727272727,
+            "Recall": 0.6666666666666666,
+            "F1-Score": 0.7157894736842105,
+            "AUC-ROC": 0.8303803449090479,
+            "Loss": 0.48719874024391174,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    17,
+                    34
+                ]
+            ]
+        }
+    },
+    "m3_l1_lasso": {
+        "Hiperparametros": {
+            "regularizacion": "l1",
+            "l1": 0.005,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.8432835820895522,
+            "Precision": 0.7719298245614035,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.8073394495412844,
+            "AUC-ROC": 0.9201454033771108,
+            "Loss": 0.3754989206790924,
+            "Matriz de confusion": [
+                [
+                    69,
+                    13
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8059701492537313,
+            "Precision": 0.7777777777777778,
+            "Recall": 0.6862745098039216,
+            "F1-Score": 0.7291666666666666,
+            "AUC-ROC": 0.840066146940704,
+            "Loss": 0.4735070466995239,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    16,
+                    35
+                ]
+            ]
+        }
+    },
+    "m3_l1_lasso_exp1": {
+        "Hiperparametros": {
+            "regularizacion": "l1",
+            "l1": 0.0005,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 70,
+        "Validacion": {
+            "Accuracy": 0.8283582089552238,
+            "Precision": 0.7457627118644068,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.7927927927927928,
+            "AUC-ROC": 0.9098264540337712,
+            "Loss": 0.37611114978790283,
+            "Matriz de confusion": [
+                [
+                    67,
+                    15
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7985074626865671,
+            "Precision": 0.7727272727272727,
+            "Recall": 0.6666666666666666,
+            "F1-Score": 0.7157894736842105,
+            "AUC-ROC": 0.831797779352705,
+            "Loss": 0.5061758160591125,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    17,
+                    34
+                ]
+            ]
+        }
+    },
+    "m3_l1_lasso_exp2": {
+        "Hiperparametros": {
+            "regularizacion": "l1",
+            "l1": 0.05,
+            "l2": 0,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.6119402985074627,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1-Score": 0.0,
+            "AUC-ROC": 0.5,
+            "Loss": 0.6679320931434631,
+            "Matriz de confusion": [
+                [
+                    82,
+                    0
+                ],
+                [
+                    52,
+                    0
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.6194029850746269,
+            "Precision": 0.0,
+            "Recall": 0.0,
+            "F1-Score": 0.0,
+            "AUC-ROC": 0.5,
+            "Loss": 0.664365291595459,
+            "Matriz de confusion": [
+                [
+                    83,
+                    0
+                ],
+                [
+                    51,
+                    0
+                ]
+            ]
+        }
+    },
+    "m4_elasticnet": {
+        "Hiperparametros": {
+            "regularizacion": "l1_l2",
+            "l1": 0.002,
+            "l2": 0.005,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.8507462686567164,
+            "Precision": 0.7857142857142857,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.8148148148148148,
+            "AUC-ROC": 0.912640712945591,
+            "Loss": 0.36841127276420593,
+            "Matriz de confusion": [
+                [
+                    70,
+                    12
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7910447761194029,
+            "Precision": 0.7674418604651163,
+            "Recall": 0.6470588235294118,
+            "F1-Score": 0.7021276595744681,
+            "AUC-ROC": 0.838648712497047,
+            "Loss": 0.4744289815425873,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    18,
+                    33
+                ]
+            ]
+        }
+    },
+    "m4_elasticnet_exp1": {
+        "Hiperparametros": {
+            "regularizacion": "l1_l2",
+            "l1": 0.0002,
+            "l2": 0.0005,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 32,
+        "Validacion": {
+            "Accuracy": 0.8208955223880597,
+            "Precision": 0.7333333333333333,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.7857142857142857,
+            "AUC-ROC": 0.914985928705441,
+            "Loss": 0.3723677396774292,
+            "Matriz de confusion": [
+                [
+                    66,
+                    16
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8208955223880597,
+            "Precision": 0.7872340425531915,
+            "Recall": 0.7254901960784313,
+            "F1-Score": 0.7551020408163265,
+            "AUC-ROC": 0.8362863217576186,
+            "Loss": 0.48333540558815,
+            "Matriz de confusion": [
+                [
+                    73,
+                    10
+                ],
+                [
+                    14,
+                    37
+                ]
+            ]
+        }
+    },
+    "m4_elasticnet_exp2": {
+        "Hiperparametros": {
+            "regularizacion": "l1_l2",
+            "l1": 0.01,
+            "l2": 0.02,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.8507462686567164,
+            "Precision": 0.7857142857142857,
+            "Recall": 0.8461538461538461,
+            "F1-Score": 0.8148148148148148,
+            "AUC-ROC": 0.911937148217636,
+            "Loss": 0.3855149447917938,
+            "Matriz de confusion": [
+                [
+                    70,
+                    12
+                ],
+                [
+                    8,
+                    44
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7835820895522388,
+            "Precision": 0.7291666666666666,
+            "Recall": 0.6862745098039216,
+            "F1-Score": 0.7070707070707071,
+            "AUC-ROC": 0.8353413654618473,
+            "Loss": 0.47528472542762756,
+            "Matriz de confusion": [
+                [
+                    70,
+                    13
+                ],
+                [
+                    16,
+                    35
+                ]
+            ]
+        }
+    }
+}

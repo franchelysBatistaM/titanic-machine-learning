@@ -1,0 +1,61 @@
+{
+  "age_median": 29.0,
+  "fare_median": 14.4542,
+  "embarked_mode": "S",
+  "titulos_validos": [
+    "Mr",
+    "Mrs",
+    "Miss",
+    "Master"
+  ],
+  "cat_cols": [
+    "Sex",
+    "Embarked",
+    "Title"
+  ],
+  "num_cols": [
+    "Pclass",
+    "Age",
+    "Fare",
+    "SibSp",
+    "Parch",
+    "FamilySize"
+  ],
+  "fare_log1p": true,
+  "columnas_finales": [
+    "Pclass",
+    "Age",
+    "SibSp",
+    "Parch",
+    "Fare",
+    "FamilySize",
+    "IsAlone",
+    "HasCabin",
+    "Sex_female",
+    "Sex_male",
+    "Embarked_C",
+    "Embarked_Q",
+    "Embarked_S",
+    "Title_Master",
+    "Title_Miss",
+    "Title_Mr",
+    "Title_Mrs",
+    "Title_Rare"
+  ],
+  "norm_mean": [
+    2.304975986480713,
+    30.17094612121582,
+    2.9457035064697266,
+    0.5248796343803406,
+    0.38523274660110474,
+    1.9101123809814453
+  ],
+  "norm_variance": [
+    0.6870859861373901,
+    173.28709411621094,
+    0.9485061168670654,
+    1.2766681909561157,
+    0.6991077661514282,
+    2.762385845184326
+  ]
+}
