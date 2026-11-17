@@ -1,0 +1,194 @@
+{
+    "Modelo 5 (Dropout)": {
+        "Hiperparametros": {
+            "dropout_rate": 0.3,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 27,
+        "Validacion": {
+            "Accuracy": 0.8656716417910447,
+            "Precision": 0.7931034482758621,
+            "Recall": 0.8846153846153846,
+            "F1-Score": 0.8363636363636363,
+            "AUC-ROC": 0.9175656660412758,
+            "Loss": 0.36075374484062195,
+            "Matriz de confusion": [
+                [
+                    70,
+                    12
+                ],
+                [
+                    6,
+                    46
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.8208955223880597,
+            "Precision": 0.7755102040816326,
+            "Recall": 0.7450980392156863,
+            "F1-Score": 0.76,
+            "AUC-ROC": 0.8480982754547602,
+            "Loss": 0.45457908511161804,
+            "Matriz de confusion": [
+                [
+                    72,
+                    11
+                ],
+                [
+                    13,
+                    38
+                ]
+            ]
+        }
+    },
+    "Modelo 6 (BatchNorm)": {
+        "Hiperparametros": {
+            "batch_normalization": true,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 40,
+        "Validacion": {
+            "Accuracy": 0.8805970149253731,
+            "Precision": 0.8333333333333334,
+            "Recall": 0.8653846153846154,
+            "F1-Score": 0.8490566037735849,
+            "AUC-ROC": 0.9020872420262667,
+            "Loss": 0.3649539053440094,
+            "Matriz de confusion": [
+                [
+                    73,
+                    9
+                ],
+                [
+                    7,
+                    45
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7686567164179104,
+            "Precision": 0.7272727272727273,
+            "Recall": 0.6274509803921569,
+            "F1-Score": 0.6736842105263158,
+            "AUC-ROC": 0.815024805102764,
+            "Loss": 0.5275101065635681,
+            "Matriz de confusion": [
+                [
+                    71,
+                    12
+                ],
+                [
+                    19,
+                    32
+                ]
+            ]
+        }
+    },
+    "Modelo 7 (Autoencoder)": {
+        "Hiperparametros": {
+            "dim_latente": 8,
+            "encoder": "18-16-8",
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy (clasificador) / mse (autoencoder)"
+        },
+        "Epocas ejecutadas": 80,
+        "Validacion": {
+            "Accuracy": 0.835820895522388,
+            "Precision": 0.7777777777777778,
+            "Recall": 0.8076923076923077,
+            "F1-Score": 0.7924528301886793,
+            "AUC-ROC": 0.9114681050656662,
+            "Loss": 0.3820743262767792,
+            "Matriz de confusion": [
+                [
+                    70,
+                    12
+                ],
+                [
+                    10,
+                    42
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7761194029850746,
+            "Precision": 0.7142857142857143,
+            "Recall": 0.6862745098039216,
+            "F1-Score": 0.7,
+            "AUC-ROC": 0.8183321521379637,
+            "Loss": 0.49248334765434265,
+            "Matriz de confusion": [
+                [
+                    69,
+                    14
+                ],
+                [
+                    16,
+                    35
+                ]
+            ]
+        },
+        "Epocas autoencoder": 150,
+        "MSE reconstruccion (val)": 0.020539162680506706
+    },
+    "Modelo 8 (Conv1D)": {
+        "Hiperparametros": {
+            "filtros": 32,
+            "kernel_size": 3,
+            "learning_rate": 0.001,
+            "batch_size": 32,
+            "epochs_max": 80,
+            "optimizador": "adam",
+            "loss": "binary_crossentropy"
+        },
+        "Epocas ejecutadas": 53,
+        "Validacion": {
+            "Accuracy": 0.8582089552238806,
+            "Precision": 0.8235294117647058,
+            "Recall": 0.8076923076923077,
+            "F1-Score": 0.8155339805825242,
+            "AUC-ROC": 0.910764540337711,
+            "Loss": 0.3585567772388458,
+            "Matriz de confusion": [
+                [
+                    73,
+                    9
+                ],
+                [
+                    10,
+                    42
+                ]
+            ]
+        },
+        "Test": {
+            "Accuracy": 0.7761194029850746,
+            "Precision": 0.7692307692307693,
+            "Recall": 0.5882352941176471,
+            "F1-Score": 0.6666666666666666,
+            "AUC-ROC": 0.8133711315851642,
+            "Loss": 0.5408157110214233,
+            "Matriz de confusion": [
+                [
+                    74,
+                    9
+                ],
+                [
+                    21,
+                    30
+                ]
+            ]
+        }
+    }
+}
