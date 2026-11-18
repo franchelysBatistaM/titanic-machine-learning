@@ -11,6 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "data_processed"
 MODEL_DIR = BASE_DIR / "saved_models"
 
+# Columnas que debe traer un CSV nuevo (el mismo formato del test.csv de Kaggle).
 # "Cabin" es opcional: si no viene, se asume que ningun pasajero tiene cabina registrada.
 COLUMNAS_OBLIGATORIAS = ["Pclass", "Name", "Sex", "Age", "SibSp", "Parch", "Fare", "Embarked"]
 
@@ -21,6 +22,7 @@ def cargar_modelo():
         info = json.load(f)
     modelo = keras.models.load_model(MODEL_DIR / info["archivo"])
     return modelo, info
+
 
 def preprocesar_csv(df):
     """Aplica EXACTAMENTE el mismo preprocesamiento del entrenamiento a un DataFrame nuevo.

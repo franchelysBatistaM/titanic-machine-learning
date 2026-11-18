@@ -24,6 +24,7 @@ ARCHIVOS = {
     "Modelo 5 (Dropout)": "m5_dropout",
     "Modelo 6 (BatchNorm)": "m6_batchnorm",
     "Modelo 7 (Autoencoder + clasificador)": "m7_autoencoder",
+    "Modelo 7 (Autoencoder)": "m7_autoencoder",
     "Modelo 8 (Conv1D)": "m8_conv1d",
 }
 # 1. Cargar resultados de los dos grupos
@@ -92,11 +93,11 @@ tiene_test = "Test AUC-ROC" in tabla.columns
 fig, axes = plt.subplots(1, 2, figsize=(15, 5))
 for ax, m in zip(axes, ["Accuracy", "AUC-ROC"]):
     ancho = 0.38 if tiene_test else 0.6
-    ax.bar(x - (ancho / 2 if tiene_test else 0), tabla[f"Val {m}"], ancho, label="ValidaciÃ³n")
+    ax.bar(x - (ancho / 2 if tiene_test else 0), tabla[f"Val {m}"], ancho, label="Validación")
     if tiene_test:
         ax.bar(x + ancho / 2, tabla[f"Test {m}"], ancho, label="Test propio")
     if m == "Accuracy":
-        ax.axhline(base_val, color="red", linestyle="--", label="LÃ­nea base")
+        ax.axhline(base_val, color="red", linestyle="--", label="Línea base")
     ax.set_xticks(x)
     ax.set_xticklabels(corto, fontsize=8)
     ax.set_ylim(0.5, 1.0)
@@ -126,7 +127,7 @@ for j in range(len(cols_img)):
 idx_mejor = tabla.index[tabla["Modelo"] == mejor_titulo][0] + 1
 for j in range(len(cols_img)):
     t[(idx_mejor, j)].set_facecolor("#C6EFCE")
-plt.title(f"Tabla comparativa (en verde: mejor modelo segÃºn {col})")
+plt.title(f"Tabla comparativa (en verde: mejor modelo según {col})")
 plt.tight_layout()
 plt.savefig(GRAPH_DIR / "tabla_comparativa.png", dpi=300)
 plt.close()
@@ -142,12 +143,12 @@ for ax, (titulo, r) in zip(axes.ravel(), sorted(results.items())):
                 color="white" if v > cm.max() / 2 else "black", fontsize=12)
     ax.set_xticks([0, 1])
     ax.set_yticks([0, 1])
-    ax.set_xticklabels(["No", "SÃ­"])
-    ax.set_yticklabels(["No", "SÃ­"])
+    ax.set_xticklabels(["No", "Sí"])
+    ax.set_yticklabels(["No", "Sí"])
     ax.set_xlabel("Predicho")
     ax.set_ylabel("Real")
     ax.set_title(titulo.split("(")[0].strip() + "\n" + titulo.split("(")[1].split(")")[0][:20], fontsize=9)
-plt.suptitle(f"Matrices de confusiÃ³n ({conjunto})")
+plt.suptitle(f"Matrices de confusión ({conjunto})")
 plt.tight_layout()
 plt.savefig(GRAPH_DIR / "matrices_confusion.png", dpi=300)
 plt.close()
