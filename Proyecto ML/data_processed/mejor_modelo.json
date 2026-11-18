@@ -1,0 +1,6 @@
+{
+    "titulo": "Modelo 3 (L1 Lasso)",
+    "archivo": "m3_l1_lasso.keras",
+    "criterio": "AUC-ROC",
+    "valor_validacion": 0.9201454033771108
+}
